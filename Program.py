@@ -1,5 +1,4 @@
 from chardet import detect
 
-a = "а"
-a_utf = a.encode('utf-8')
-print(a_utf)
+with open('ProgramSecond.py', 'rb') as f1:
+    print(detect(f1.read()))
