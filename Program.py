@@ -1,4 +1,6 @@
-from chardet import detect
-
-with open('ProgramSecond.py', 'rb') as f1:
-    print(detect(f1.read()))
+x = 9
+y = 48
+while (y-x)>0:
+    x+=1
+    y-=3
+print(x)
