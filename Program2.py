@@ -1,6 +1,11 @@
-start = 500
-quantity = 1
-while start//2>=1:
-    quantity+=1
-    start//=2
-print(quantity)
+from random import randint
+
+needInt = randint(1, 999)
+playerInt = int(input('Угадай число:'))
+while playerInt != needInt:
+    if playerInt > needInt:
+        print('меньше')
+    else:
+        print('больше')
+    playerInt = int(input())
+print('угадано')
