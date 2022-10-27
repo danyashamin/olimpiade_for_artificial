@@ -1,11 +1,4 @@
-from random import randint
-
-needInt = randint(1, 999)
-playerInt = int(input('Угадай число:'))
-while playerInt != needInt:
-    if playerInt > needInt:
-        print('меньше')
-    else:
-        print('больше')
-    playerInt = int(input())
-print('угадано')
+boys = {'Alex':11, 'Ann':12}
+boys['Alex'] = 12
+boys['Mishel'] = 4
+print(boys['Alex'], boys['Mishel'])
